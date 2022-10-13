@@ -1,119 +1,403 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
+
+<html lang="zh-Hans">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
     <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="google-site-verification" content="TZE0rZyIqLl10trYu3BWBWa1Vmz6HFwhb2OcNEK4u-s" />
-     <link rel="shortcut icon" href= /img/favicon.ico >
-    <title>
-        Hexo
-    </title>
-    <meta name="description" content= 哈哈哈 >
-    <meta name="keywords" content= Blog >
-    
-<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    <!-- Title -->
+    <title>归档: 2022 | YUMA</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
 
     
-<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="YUMA"><meta name="msapplication-starturl" content="http://example.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="YUMA"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="归档: 2022 | YUMA"><meta property="og:site_name" content="YUMA"><meta property="og:type" content="website"><meta property="og:url" content="http://example.com/archives/2022/"><meta property="og:locale" content="zh-Hans"><meta name="description" content="YUMA - YUMA">
 
     
-<link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 6.3.0"></head>
-<body id="bodyx">
-    <div class="hd logodiv">
-    <img src="/img/male.png" class="logopng" alt="logo">
-    <p class="logot">
-         YUMA的BLOG网站 
-         <span class="logo_2"></span>
-        <h3 class="words" style="font-weight: bold;font-family: Georgia;"> 
-            AI 🤖️ Code 🧑‍💻 Life 🌈 
-        </h3>
-    </p>
-</div>
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="http://example.com/archives/2022/">
 
-<div class="hd">
-    <ol class="breadcrumb">
-        
-            <li><a class="ba" href="/about">关于我👀</a></li>
-        
-            <li><a class="ba" target="_blank" rel="noopener" href="https://github.com/deathpooool">GitHub🐒</a></li>
-        
-    </ol>
-    <hr class="breadcrumbhr">
-</div>
-<div class="hd">
+    <meta name="generator" content="Hexo 4.2.1">
+
+    <!-- ### Analytics ### -->
     
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
     
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">YUMA</a></h1>
+
+    <p class="text-center header-slogan">
         
-        
-            <div class="titlex">
-                <p><span class="jing"></span><span style="color: #6d9ee7;"> 公元</span> 
-                 2022年 🕛
-                </p>
-            </div>
+            
+                Hi, nice to meet you.
             
         
-        <a class="flink" href="/2022/10/12/hello-world/">
-            <div class="list">
-                <div class="postname">
-                    Hello World
-                </div>
-                <div class="posttime">
-                    October 12th
-                </div>
-            </div>
-        </a>
+    </p>
+
+    <nav class="navbar-section text-center">
     
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+        <a href="/search" class="navbar-link">搜索</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=YUMA&url=http://example.com&pic=http://example.com/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=YUMA&url=http://example.com&via=YUMA" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=http://example.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com&title=" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=YUMA&title=&summary=&pics=http://example.com/img/suka-favicon.ico&url=http://example.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=http://example.com&text=" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABfUlEQVR42u3aSRLCMAxE0dz/0rAFylK3AoQ29bNhSHDeQhUN5rgFHAcIECC2QBzN8fSDl8/db911QeQilkHzePECVV3/+tquCyIasQqs1fnuptX51bog9kd0AVk9yED8L6JLTN13IPZGqMCqFq4C+KNZFMTlCFWwnn39WLUN4lKEbFpFcnKC8e2uHMSliC6Q3IZIFbjleiAiEdNA6xrl6bAFRD6iG4pNYG7zBCIfoW7qFDvuexDZiK7hUQ+0aQMFIh/hBOIK5CavNoBBRCLUsLx6GFlFSzNEAZGNUIXNJEG1CUslMBARiGNwqCJmmuRA5CK6TTU1SFcF83jTBUQUwh10nNmYsQMTRBTCHaSqhsdJfCD2QqimeJr8yoYJRCTi7Eac2+R8dXMWxFcQ1sb68E88akALIh+hCpbJ8LQKTGvDHkQUwgk2p5BV34P4L4TTDDl/GgaxP0LdcDp0A7EH4kyS6h5iVhEMIhYxaWSdgakzpAWRi/jlAQIEiGjEHQaBmKihjLdWAAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
 </div>
+    
+    
+</nav>
+</header>
 
-    <div class="footer" id="footer">
-    <p><h4>Copyright © 2020 | Author: Yuma | Theme By <a class="theme-author" target="_blank" rel="noopener" href="https://github.com/Xunzhuo/hexo-theme-coder" style="font-size:14px; color: #969696">Coder</a></h4>
-    <label class="el-switch el-switch-blue el-switch-sm" style="vertical-align: sub;">
-        <input type="checkbox" name="switch" id="update_style">
-        <span class="el-switch-style"></span>
-    </label>
-    <!--         <script type="text/javascript">
-    var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
-    document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-    </script> -->
-</p>
+            <div class="container">
+    <div class="main-container">
+        <main>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-left">
+                        <div class="timeline-icon"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="tile">
+                            <div class="tile-content">
+                                <p class="tile-title">
+                                    目前共计 1 篇文章
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-icon icon-lg"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="tile">
+                                <div class="tile-content">
+                                    <p class="tile-title mb-0 h4">2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-left">
+                            <div class="timeline-icon"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="tile">
+                                <div class="tile-content">
+                                    <span class="tile-subtitle text-gray mb-1">10-12</span>
+                                    <a href="/2022/10/12/hello-world/" class="timeline-tile-title ml-1" rel="bookmark"><span class="tile-title">Hello World</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+                
+            </div>
+
+        </main>
+        
+
+    </div>
 </div>
-<input type="hidden" id="web_style" value="light">
-<input type="hidden" id="valine_appid" value="">
-<input type="hidden" id="valine_appKey" value="">
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="http://example.com">YUMA</a>
+        </p>
 
-<script src="/libs/jquery.min.js"></script>
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
 
 
-<script src="/libs/highlight/highlight.pack.js"></script>
 
-<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
 
-<script src="/js/js.js"></script>
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
 
-<style type="text/css">
-.v * {
-color: #698fca;
-}
-.v .vlist .vcard .vhead .vsys {
-color: #3a3e4a;
-}
-.v .vlist .vcard .vh .vmeta .vat {
-color: #638fd5;
-}
-.v .vlist .vcard .vhead .vnick {
-color: #6ba1ff;
-}
-.v a {
-color: #8696b1;
-}
-.v .vlist .vcard .vhead .vnick:hover {
-color: #669bfc;
-}
-</style>
-    <script type="text/javascript" color="173,174,173" opacity='1' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-</body>
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
 </html>
