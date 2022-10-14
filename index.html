@@ -21,6 +21,9 @@
 <!-- comment -->
 
 
+    <link rel="dns-prefetch" href="//disqus.com">
+    <link rel="dns-prefetch" href="//deathpool.disqus.com">
+
 
 
 
@@ -126,6 +129,10 @@
 </style><link rel="stylesheet" href="/css/style.min.css">
 
 
+
+
+    <!-- prism.css -->
+    
 
 
 
@@ -429,10 +436,31 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c 
 
 <!-- Offset -->
 
+<script>
+    var int = setInterval(fixCount, 50);
+    function fixCount() {
+        
+        var $$bsz_site_container_uv = document.getElementById('busuanzi_container_site_uv');
+        var $$bsz_site_value_uv = document.getElementById('busuanzi_value_site_uv');
+        var busuanziSiteUVOffset = parseInt('1000000');
+        if ($$bsz_site_container_uv.ownerDocument.defaultView.getComputedStyle($$bsz_site_container_uv, null).display === 'inline') {
+            clearInterval(int);
+            $$bsz_site_value_uv.innerHTML = parseInt($$bsz_site_value_uv.innerHTML) + busuanziSiteUVOffset;
+        }
+        
+
+        
+
+        
+    }
+</script>
+
 
 
 
 <!-- Comment -->
+
+    
 
 
 <!-- ### Custom Footer ### -->
